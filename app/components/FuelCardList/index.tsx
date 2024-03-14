@@ -17,7 +17,7 @@ type gasfillup = {
 const FuelLogFlatList = () => {
   // get all fillups
   const fillups = useQuery('gasfillup');
-  console.log(fillups);
+  console.log('fillups', fillups.length);
 
   const renderItem = ({item}: any) => (
     <View style={styles.item}>
